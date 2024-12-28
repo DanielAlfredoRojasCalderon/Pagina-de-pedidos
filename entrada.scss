@@ -1,0 +1,614 @@
+$ptamañoTexto : 1.2rem;
+$subtitulos: 1.5rem;
+$textoImagenes: 1.4rem;
+$fuente_principal: 'Roboto', sans-serif;
+$primario: #e8505b;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1rem;
+    justify-items: center;
+    font-family: $fuente_principal;
+    h2{
+        font-size: 2rem;
+    }
+}
+
+header{
+    height: 6rem;
+    width: 102rem;
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    #Capa_1{
+        height: 100%;
+        
+    }
+    nav{
+        align-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+        div{
+            align-content: center;
+            height: 6rem;
+        }
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.6rem;
+            
+        }
+        div:hover{
+            background-color: $primario;
+            border-radius: 0.5rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            a{
+                color: white;
+    
+            }
+        }
+
+    }
+
+}
+
+
+.formularioInicial{
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 50rem;
+    width: 100rem;
+    .contenedor-form{
+        height: 100%;
+        background-color: #e8505b;
+        align-content: center;
+        justify-items: center;
+        width: 100%;
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            align-items: start;
+            justify-content: center;
+            height: 80%;
+            
+            
+            h2{
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            }
+            label{
+                font-size: 1.2rem;
+                color: white;
+            }
+            .primerlabel{
+                margin-top: 4rem;
+            }
+            input{
+                width: 100%;
+                border: none;
+                height: 2.8rem;
+                border: none;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                padding-left: 1.1rem;
+                
+                
+            }
+            button{
+                
+                border: none;
+                height: 2.5rem;
+                
+                
+                padding-left: 1.2rem;
+                cursor: pointer;
+                width: 100%;
+                
+            }
+        }
+
+    }
+    
+    .contenedorImg{
+        
+        height: 100%;
+        text-align: center;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        
+        img{
+            height: 100%;
+        }
+    }
+}
+
+
+.container-funciona{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 55rem;
+    width: 100%;
+    background-color: $primario;
+    .containerTexto{
+        padding-top: 2rem;
+        height: 15%;
+        text-align: center;
+        h2{
+            color: white;
+            font-size: 2.2rem;
+        }
+        p{
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .containerImg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 1rem;
+        height: 80%;
+        width: 100%;
+        img{
+            width: 28rem;
+            height: 100%;
+        }
+    }
+
+}
+
+.container-Testimoniales{
+    margin-top: 3.5rem;
+    height: 45rem;
+    width: 65%;
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    h3{
+        color: white ;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    p{
+        color: white;
+        font-size: 1rem;
+    }
+    
+    grid-template-areas:
+        "test1 test1 test1 test2 test5"
+        "test3 test3 test4 test4 test5";
+    grid-template-columns: 18.8% 18.8% 18.8% 18.8% 18.8%;
+    grid-template-rows: 49% 47%;
+    
+    .testimoniales1{
+        background-color: $secundario;
+        grid-area: test1;
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 1rem;
+        padding: 2rem;
+        align-items: center;
+        .testimonialesLinea1{
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img{
+                width: 13%;
+                height: 97%;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+            .testimonialesLinea2{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                
+                
+                img{
+                    height: 35%;
+                    width: 54%;
+                    border-radius: 0px;
+                    margin-top: -1.4rem;
+                    
+                }
+
+            }
+    
+        }
+        p{
+            width: 90%;
+            font-size: 1.5rem;
+            
+        }
+
+    }
+    .testimoniales2{
+        background-color: $secundario;
+        grid-area: test2;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 2rem;
+        align-items: center;
+        
+        .testimonialesLinea1{
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+            
+
+            img{
+                width: 30%;
+                height: 100%;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+            .testimonialesLinea2{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                
+                img{
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 0px;
+                    margin-top: -1rem;
+                    
+                }
+
+            }
+    
+        }
+
+        p{
+            
+            font-size: 1.5rem;
+            height: 70%;
+            width: 90%;
+        }
+        
+        
+    }
+    .testimoniales3{
+        background-color: $secundario;
+        grid-area: test3;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 2rem;
+        align-items: center;
+        .testimonialesLinea1{
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+            
+
+            img{
+                width: 20%;
+                height: 100%;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+            .testimonialesLinea2{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                
+                img{
+                    height: 35%;
+                    width: 80%;
+                    border-radius: 0px;
+                    margin-top: -1rem;
+                    
+                }
+
+            }
+    
+        }
+        p{
+            
+            font-size: 1.5rem;
+            height: 70%;
+            width: 90%;
+        }
+        
+    }
+    .testimoniales4{
+        background-color: $secundario;
+        grid-area: test4;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 2rem;
+        align-items: center;
+        .testimonialesLinea1{
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+            
+
+            img{
+                width: 20%;
+                height: 100%;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+            .testimonialesLinea2{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                
+                img{
+                    height: 35%;
+                    width: 80%;
+                    border-radius: 0px;
+                    margin-top: -1rem;
+                    
+                }
+
+            }
+    
+        }
+        p{
+            
+            font-size: 1.5rem;
+            height: 70%;
+            width: 90%;
+            
+        }
+        
+        
+    }
+    .testimoniales5{
+        background-color: $secundario;
+        grid-area: test5;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 2rem;
+        align-items: center;
+        
+        .testimonialesLinea1{
+            height: 15%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+            
+
+            img{
+                width: 30%;
+                height: 90%;
+                border-radius: 50%;
+                margin-right: 1rem;
+                
+            }
+            .testimonialesLinea2{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                margin-top: -1rem;
+                
+                img{
+                    height: 55%;
+                    width: 95%;
+                    border-radius: 0px;
+                    margin-top: -1rem;
+                    
+                }
+
+            }
+    
+        }
+        p{
+            
+            font-size: 1.5rem;
+            height: 70%;
+            width: 90%;
+        }
+        
+    }
+}
+
+.container-Restaurantes{
+    background-color: $grisClaro;
+    width: 100%;
+    height: 151rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 2rem;
+    }
+    .restaurantes{
+        display: grid;
+        grid-template-columns: 31% 31%;
+        align-content: center;
+        justify-content: center;
+        gap: 3rem;
+        .primerColumna,.segundaColumna{
+            
+            .card-Comentarios{
+                height: 16%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 1.5rem;
+                margin-bottom: 2rem;
+                background-color: white;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                
+                .logo{
+                    width: 30%;
+                    height: 40%;
+                    margin-right: 2rem;
+                    
+                    
+                }
+                .texto-Restaurantes{
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    
+                    .estrella{
+                        height: 30%;
+                        width: 60%;
+                        margin-top: 1rem;
+                    }
+                    h3{
+                        
+                        font-size: 1.8rem;
+                        
+                    }
+                    p{
+                        font-size: 1.3rem;
+                        margin-top: -1rem;
+                    }
+                }
+            }
+
+          }
+    
+    }
+
+}
+
+
+.container-Gana{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 35rem;
+    h3{
+        font-size: 2rem;
+    }
+    .divRepartidor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 62%;
+        height: 80%;
+        gap: 2rem;
+        img{
+            width: 100%;
+            height: 90%;
+        }
+        .item-container{
+            margin: 1rem ;
+            p{
+                font-size: 1.5rem;
+            }
+            button{
+                background-color: $primario;
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 8px;
+                width: 15rem;
+                height: 3.2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.footerNavegacion{
+    
+    border-top: 0.1rem solid #e1e1e1;
+    padding-top: 1rem;
+    justify-items: center;
+    width: 100%;
+    height: 24rem;
+    background-color: #455a64;
+    .contenido-footer{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 1rem;
+        
+        width: 90rem;
+        height: 15rem;
+        gap: 2rem;
+        .footer-categorias,.footer-Sobre,.footer-Soporte{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .footer-categorias{
+            padding-right: 1.5rem;
+        }
+        .footer-Sobre{
+            a{
+                text-decoration: none;
+                color: white;
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+        
+      }
+        h3{
+            font-size: 2rem;  
+            color: white;
+            margin-bottom: -0.1rem;
+        }
+        p{
+            color: white;
+            line-height: 2.5rem;
+            font-size: 1.3rem;
+        }
+
+  }
+  footer{
+    background-color: #e8505b;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    align-content: center;
+    p{
+        color: white;
+        font-size: 1.3rem;
+    }
+  }
